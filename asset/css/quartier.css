@@ -1,0 +1,133 @@
+body{
+    background: linear-gradient(rgb(207, 205, 205), white);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 80%;
+  margin: auto auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-gap: 20px;
+}
+
+.container-1 {
+    /* display: grid; */
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: 1fr; */
+/* grid-template-rows: auto 3fr 1fr; */
+/* grid-template-rows: auto 3fr 1fr; */
+border: solid 0.5px rgb(199, 191, 191);
+box-shadow: 2px 2px 5px rgb(199, 191, 191);
+border-radius: 5px;
+  align-items: center;
+  justify-items: center;
+}
+.picture{
+    position: relative;
+    height: 100%;
+    
+}
+.container-1:hover{
+    transform: translateY(-1.1rem);
+}
+.text {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.separateur{
+    width: 100%; 
+   border-bottom: solid 0.5px rgba(0, 0, 0,0.6);
+}
+
+.click{
+    background-color: rgba(0, 0, 0,0.6);
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+}
+.button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.click:hover{
+    transform: scale(1.1);
+}
+.overflow{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.6);
+    position: absolute;
+    bottom: 0%;
+    overflow: hidden;
+    
+}
+.picture:hover .overflow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+span{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    animation: scrollTxt 0.8s linear 1;
+}
+@keyframes scrollTxt{
+    0%{
+        transform: translate(-100%,0);
+    } 
+    100%{
+        transform: translate(0%, 0);
+ 
+    }
+ }
+
+ /* ******************responsive****************** */
+ @media screen and (max-width:600px){
+    .container {
+        width: 80%;
+        margin: auto auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      
+        display: grid;
+        grid-template-columns: 1fr ;
+        /* grid-template-rows: 1fr 1fr; */
+        grid-gap: 20px;
+      }
+ }
+
+ @media screen and (min-width:600px) and (max-width:1160px) {
+.container {
+        width: 80%;
+        margin: auto auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        /* grid-template-rows: 1fr 1fr; */
+        grid-gap: 20px;
+      }
+
+h3{
+    font-size: 1rem;
+}
+
+ }

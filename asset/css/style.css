@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: linear-gradient(rgb(207, 205, 205), white); */
+}
+.container {
+  height: 100%;
+  margin-left: 80px;
+  margin-right: 80px;
+  
+}
+.background-header {
+  justify-content: center;
+  position: relative;
+}
+
+.menu {
+  background-color: rgb(246, 242, 242);
+  height: 25px;
+}
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  justify-items: center;
+}
+li {
+  list-style: none;
+  border-right: solid 1px black;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* transform: scale(1.2); */
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+#slide-1 {
+  position: relative;
+}
+ /* .title-1 {
+
+  width: 30%;
+  background-color: rgb(221, 218, 218);
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(0%,-80%);
+  box-shadow: 20px -20px rgb(94, 105, 105);
+  border: solid 0.5px black;
+  border-radius: 9px; 
+}  */
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  color: rgb(7, 7, 7);
+  font-size: 5rem;
+  margin: 10px;
+  position: absolute;
+  top: 0%;
+  animation: h1 1s linear 1;
+  
+}
+@keyframes h1{
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+p {
+  margin-right: 14px;
+  margin-left: 14px;
+  font-style: oblique;
+  text-align: justify;
+}
+
+#svg-1 {
+  width: 25px;
+  background-color: rgb(250, 250, 250);
+  position: absolute;
+  top: 50%;
+}
+#svg-2 {
+  width: 25px;
+  background-color: rgb(250, 250, 250);
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+#svg-0{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 30px;
+  height: 30px;
+  color: black;
+  cursor: pointer;
+}
+#slide-1 {
+  max-width: 2500px;
+  /* overflow: hidden; */
+}
+
+img {
+  width: 100%;
+}
+
+.presentation {
+  width: 40%;
+  height: 40%;
+  background-color: rgb(255, 255, 255);
+  /* border: solid 1px black; */
+  position: absolute;
+  top: 100%;
+  left: 0%;
+
+  /* box-shadow: 5px 5px 5px rgb(235, 232, 232); */
+  border-radius: 5px;
+}
+h3 {
+  font-size: 3rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.photo-presentation-1 {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  border-left: 5px solid white;
+  border-top: 5px solid white;
+}
+
+.overflow-0 {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 1%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+
+.photo-presentation-1:hover .overflow-0 {
+display: block;
+}
+
+
+.p-0{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.photo-presentation-2 {
+  position: absolute;
+  top: 140%;
+  right: 50%;
+  /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+  border-right: 5px solid white;
+  border-top: 5px solid white;
+}
+
+.overflow-1{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0,0.5);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.photo-presentation-2:hover .overflow-1 {
+  display: block;
+  }
+.p-1{
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  
+}
+.paragraphe {
+  background-color: white;
+  border: solid 1px black;
+  position: absolute;
+  top: 170%;
+  right: 15%;
+}
+.paragraphe:hover .overflow-2 {
+  display: block;
+  border: inherit;
+  cursor: pointer;
+}
+.overflow-2 {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 99%;
+  display: none;
+}
+
+.p-2 {
+  font-size: 3rem;
+}
+
+#svg-3 {
+  width: 60px;
+  position: absolute;
+  right: -13%;
+  top: 33%;
+  cursor: pointer;
+}
+
+span {
+  color: brown;
+}
+/* ******************responsive****************** */
+@media screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 1.2rem;
+   
+    
+  }
+  .presentation {
+    position: inherit;
+   
+  }
+  .container-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo-presentation-1 {
+   position: inherit;
+  }
+
+  h3 {
+    font-size: 1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 0.7rem;
+    margin: 0;
+    margin-right: 14px;
+    margin-left: 14px;
+    font-style: oblique;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1160px) {}
