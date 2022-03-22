@@ -2,77 +2,155 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(black, white);
-  /* background-color: black; */
-}
-
-img {
-  width: 100%;
- }
- [alt="photo-header"] {
-   height: 100%;
- }
-[alt="voiture"] {
-  position: absolute;
-  left: 0;
-  bottom: 0%;
-  width: 120px;
-  height: 70px;
-  z-index: 1;
-  animation: voiture 7s linear infinite;
-}
-@keyframes voiture {
-  0% {
-    /* transform: translate(-100%, 0); */
-    margin-left: 0%;
-  }
-  100% {
-    /* transform: translate(1650%, 0); */
-    margin-left: 100%;
-  }
-}
-[alt="plane"] {
-  position: absolute;
-  left: 0%;
-  top: 8%;
-  width: 100px;
-  height: 70px;
-  z-index: 2;
-  animation: plane 5s linear infinite;
-}
-@keyframes plane {
-  0% {
-    /* transform: translate(-100%, 0); */
-    margin-left: 0%;
-  }
-  100% {
-    /* transform: translate(1650%, 0); */
-    margin-left: 100%;
-  }
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 95%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), white);
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  /* clip-path: polygon(0 0, 71% 0, 45% 100%, 0% 100%); */
-  clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
 }
 .main-picture {
-  width: 100%;
   position: relative;
 }
-/* .title {
-  background-color: white;
+img {
+  width: 100%;
+}
+[alt="personnage-printemps"] {
+  width: 40px;
+  height: 70px;
+  position: absolute;
+  z-index: 1;
+  bottom: 1%;
+  left: 0%;
+  animation: personnage-printemps 15s linear infinite;
+}
+@keyframes personnage-printemps {
+  0% {
+    margin-top: 0%;
+    z-index: 2;
+  }
+  100% {
+    margin-left: 25%;
+    z-index: 2;
+  }
+}
+
+[alt="person-ete"] {
+  width: 40px;
+  height: 70px;
+  position: absolute;
+  bottom: 1%;
+  left: 25%;
+  animation: person-ete 15s linear infinite;
+}
+@keyframes person-ete {
+  0% {
+    margin-left: 0%;
+    z-index: 2;
+  }
+  100% {
+    margin-left: 25%;
+    z-index: 2;
+  }
+}
+[alt="person-hiver"] {
+  width: 40px;
+  height: 70px;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  animation: person-hiver 15s linear infinite;
+}
+@keyframes person-hiver {
+  0% {
+    margin-left: 0%;
+    z-index: 2;
+  }
+  100% {
+    margin-left: 25%;
+    z-index: 2;
+  }
+}
+[alt="person-parapluie"] {
+  width: 60px;
+  height: 90px;
+  position: absolute;
+  bottom: 1%;
+  left: 75%;
+  animation: person-parapluie 15s linear infinite;
+}
+@keyframes person-parapluie {
+  0% {
+    margin-left: 0%;
+    z-index: 2;
+  }
+  100% {
+    margin-left: 25%;
+    z-index: 2;
+  }
+}
+[alt="chien"] {
+  width: 70px;
+  height: 35px;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  animation: chien 30s linear infinite;
+  z-index: 1;
+}
+@keyframes chien {
+  0% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+
+[alt="nuage"] {
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  top: 2%;
+  left: 0;
+  animation: nuage 50s linear infinite;
+  z-index: 2;
+}
+@keyframes nuage {
+  0% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+[alt="soleil"] {
+  width: 100px;
+  height: 100px;
   position: absolute;
   top: 0;
-  left: auto;
-  width: 50%;
+  right: 0;
   z-index: 1;
-  overflow: hidden;
- 
-} */
+}
+
+[alt="arbre-ete"] {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  bottom: 1%;
+  left: 35%;
+  z-index: 1;
+}
+[alt="arbre-hiver"] {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  bottom: 1%;
+  left: 60%;
+  z-index: 1;
+}
+[alt="fleur"] {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  bottom: 2%;
+  left: 10%;
+  z-index: 1;
+}
 p {
   background-color: white;
   position: absolute;
@@ -98,23 +176,18 @@ p {
     /* margin-left: 100%; */
   }
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 98%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), white);
+  clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
+}
 .picture {
   position: relative;
   height: 100%;
 }
-
-/* .legend{ 
-
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: brown;
-}*/
-
-
-
 .picture-div {
   height: 100%;
 }
@@ -160,28 +233,57 @@ p {
 /* ******************responsive****************** */
 
 @media screen and (max-width: 600px) {
-  @keyframes voiture {
-    0% {
-      /* transform: translate(-100%, 0); */
-      margin-left: 0%;
-    }
-    100% {
-      /* transform: translate(1900%, 0); */
-      margin-left: 100%;
-    }
+  [alt="personnage-printemps"] {
+    width: 20px;
+    height: 35px;
+    bottom: 4%;
   }
-  
-  @keyframes plane {
-    0% {
-      /* transform: translate(-100%, 0); */
-      margin-left: 0%;
-    }
-    100% {
-      /* transform: translate(1900%, 0); */
-      margin-left: 100%;
-    }
+  [alt="person-ete"] {
+    width: 20px;
+    height: 35px;
+    bottom: 4%;
   }
-  
+  [alt="person-hiver"] {
+    width: 20px;
+    height: 35px;
+    bottom: 4%;
+  }
+  [alt="person-parapluie"] {
+    width: 40px;
+    height: 42px;
+    bottom: 4%;
+  }
+  [alt="chien"] {
+    width: 35px;
+    height: 20px;
+  }
+
+  [alt="nuage"] {
+    width: 50px;
+    height: 30px;
+  }
+  [alt="soleil"] {
+    width: 50px;
+    height: 50px;
+  }
+  [alt="arbre-ete"] {
+    width: 50px;
+    height: 75px;
+    bottom: 4%;
+    z-index: 2;
+  }
+  [alt="arbre-hiver"] {
+    width: 50px;
+    height: 75px;
+    bottom: 4%;
+    z-index: 2;
+  }
+  [alt="fleur"] {
+    width: 15px;
+    height: 20px;
+    bottom: 4%;
+  }
+
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -210,7 +312,7 @@ p {
   }
   /* *********** */
   .pic-leg {
-   position: relative;
+    position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.6s;
@@ -218,7 +320,6 @@ p {
   }
 
   .pic-leg:active {
-    
     transform: rotateY(180deg);
   }
 
@@ -228,38 +329,16 @@ p {
     width: 100%;
     backface-visibility: hidden;
   }
-  .legend{
+  .legend {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(rgb(63, 61, 61),rgb(236, 234, 234));
+    background: linear-gradient(rgb(63, 61, 61), rgb(236, 234, 234));
     transform: rotateY(180deg);
   }
   /* ************** */
 }
 @media screen and (min-width: 600px) and (max-width: 1160px) {
-  @keyframes voiture {
-    0% {
-      /* transform: translate(-100%, 0); */
-      margin-left: 0%;
-    }
-    100% {
-      /* transform: translate(1900%, 0); */
-      margin-left: 100%;
-    }
-  }
-  
-  @keyframes plane {
-    0% {
-      /* transform: translate(-100%, 0); */
-      margin-left: 0%;
-    }
-    100% {
-      /* transform: translate(1900%, 0); */
-      margin-left: 100%;
-    }
-  }
-  
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -268,27 +347,21 @@ p {
     margin: 20px;
     background-color: rgb(0, 0, 0);
   }
+
   p {
     font-size: 1.5rem;
   }
 
-  [alt="voiture"] {
-    width: 50px;
-    height: 25px;
-  }
-  [alt="plane"] {
-    width: 50px;
-    height: 35px;
-  }
   .style {
     display: none;
   }
   .style-1 {
     display: none;
   }
+  
   /* *********** */
   .pic-leg {
-   position: relative;
+    position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.6s;
@@ -296,7 +369,6 @@ p {
   }
 
   .pic-leg:active {
-    
     transform: rotateY(180deg);
   }
 
@@ -306,11 +378,11 @@ p {
     width: 100%;
     backface-visibility: hidden;
   }
-  .legend{
+  .legend {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(rgb(63, 61, 61),rgb(236, 234, 234));
+    background: linear-gradient(rgb(63, 61, 61), rgb(236, 234, 234));
     transform: rotateY(180deg);
   }
 }

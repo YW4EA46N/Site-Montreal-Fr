@@ -49,6 +49,7 @@ h3 {
 img {
   width: 100%;
   height: 100%;
+  transition: all 1s;
 }
 img:hover {
   transform: translateY(-1.2rem);
@@ -57,15 +58,18 @@ img:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+  
 }
 .p-v-m {
   position: relative;
+  
 }
 .p-v-m:hover {
   z-index: 1;
 }
 .p-v-m-1 {
   position: relative;
+  
 }
 .d-qvm-1 {
   background: linear-gradient(to right, black, white);
