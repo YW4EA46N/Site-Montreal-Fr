@@ -1,13 +1,14 @@
 body {
-  background: linear-gradient(rgb(177, 177, 177), white);
+  background-color: white;
 }
 
 img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto auto;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -20,9 +21,11 @@ img {
 .container-1 {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgb(228, 225, 225), rgb(218, 216, 216));
+   background: linear-gradient(rgb(245, 245, 245), rgb(245, 240, 240));
+  /* background-color: white; */
+  /* box-shadow: 2px 2px 20px rgb(245, 241, 241); */
   border: solid 0.5px rgb(199, 191, 191);
-  box-shadow: 2px 2px 5px rgb(245, 241, 241);
+  box-shadow: 0px 1px 6px 5px rgb(0 0 0 / 22%);
   border-radius: 5px;
   align-items: center;
   justify-items: center;
@@ -89,7 +92,7 @@ a{
   display: none;
   color: white;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   /* animation: scrollTxt 0.8s linear 1; */
 }
 .picture:hover .overflow span {
@@ -109,10 +112,10 @@ a{
 /* ******************responsive****************** */
 @media screen and (max-width: 600px) {
   .container {
-    width: 80%;
+    width: 90%;
     margin: auto auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
@@ -127,10 +130,10 @@ a{
 
 @media screen and (min-width: 600px) and (max-width: 1160px) {
   .container {
-    width: 80%;
+    width: 90%;
     margin: auto auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -143,4 +146,5 @@ a{
   .container-1:hover {
     transform: translateY(0rem);
   }
+
 }

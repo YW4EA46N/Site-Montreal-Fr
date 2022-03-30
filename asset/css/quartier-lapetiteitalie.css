@@ -1,11 +1,10 @@
-
-  body {
+body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgb(207, 205, 205), white);
+    background: linear-gradient(rgb(255, 255, 255), white);
   }
   /* .container-1 {
-    box-shadow: 2px 2px 5px rgb(199, 191, 191);
+ box-shadow: 2px 2px 5px rgb(199, 191, 191);
     margin: 50px 100px 0 100px;
     background-color: white;
   } */
@@ -27,9 +26,9 @@
   }
   h2 {
     background: linear-gradient(to right, rgb(221, 109, 5), rgb(251, 226, 1));
+    font-size: 2.5rem;
     border-radius: 5px;
     text-align: center;
-    font-size: 2.5rem;
     color: white;
     padding-left: 5px;
     animation: h2 1s linear 1;
@@ -123,7 +122,7 @@
   }
   .d-qvm-1 {
     border-radius: 5px;
-  text-align: center;
+    text-align: center;
     background: linear-gradient(to right, rgb(221, 109, 5), rgb(251, 226, 1));
   }
   .sp-text {
@@ -148,7 +147,7 @@
     overflow: hidden;
     /* border: solid 0.5px black; */
     border-radius: 5px;
-  box-shadow: 2px 2px 5px rgb(199, 191, 191);
+    box-shadow: 2px 2px 5px rgb(199, 191, 191);
   }
   #pic {
     height: 100%;
@@ -158,6 +157,7 @@
     top: 0;
     left: 0%;
     width: 8%;
+    height: 8%;
     border-right: solid 0.5px black;
     border-bottom: solid 0.5px black;
     background-color: rgb(122, 56, 9);
@@ -185,7 +185,7 @@
     width: 8%;
     height: 8%;
     border-right: solid 0.5px black;
-  border-bottom: solid 0.5px black;
+    border-bottom: solid 0.5px black;
     background-color: gold;
     padding: 5px;
     color: white;
@@ -198,7 +198,7 @@
     width: 8%;
     height: 8%;
     border-right: solid 0.5px black;
-  border-bottom: solid 0.5px black;
+    border-bottom: solid 0.5px black;
     background-color: rgb(64, 129, 47);
     padding: 5px;
     color: white;
@@ -331,7 +331,7 @@
     .container {
       display: grid;
       margin-top: 0px;
-      margin-bottom: 50px;
+      margin-bottom: 0px;
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -408,7 +408,7 @@
     .container {
       display: grid;
       margin-top: 0px;
-      margin-bottom: 50px;
+      margin-bottom: 0px;
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -467,12 +467,12 @@
   
   @media screen and (min-width: 725px) and (max-width: 1100px) {
     html {
-      font-size: 110%;
+      font-size: 90%;
     }
     .container {
       display: grid;
       margin-top: 0px;
-      margin-bottom: 50px;
+      margin-bottom: 0px;
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -539,7 +539,7 @@
   }
   @media screen and (min-width: 1100px) {
     html {
-      font-size: 90%;
+      font-size: 110%;
     }
   
     .container-1 {
@@ -550,7 +550,7 @@
     .container {
       display: grid;
       margin-top: 0px;
-      margin-bottom: 50px;
+      margin-bottom: 0px;
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -560,4 +560,3 @@
       margin: 20px 0 50px 0;
     }
   }
-  
