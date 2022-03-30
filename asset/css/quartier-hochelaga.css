@@ -457,7 +457,7 @@ h3 {
     font-size: 1.5rem;
   }
   .art-title {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .p-hover {
     font-size: 0.9rem;
@@ -524,16 +524,16 @@ h3 {
     font-size: 1.5rem;
   }
   .h4-title{
-    font-size:1.3rem ;
+    font-size:1.2rem ;
   }
   .art-title {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   .h4-hover {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .p-hover {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 1100px) {
